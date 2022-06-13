@@ -1,14 +1,14 @@
 {
-  "posts": {
+  "Post": {
     "title": { "string": {} },
     "comments": {
-      "hasMany": "comments"
+      "hasMany": "Comment"
     }
   },
-  "comments": {
+  "Comment": {
     "body": { "string": {} },
     "post": {
-      "belongsTo": "posts"
+      "belongsTo": "Post"
     }
   }
 }
